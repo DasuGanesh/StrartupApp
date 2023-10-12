@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StrartupApp</title>
+    <link rel="stylesheet" href="StrartupApp.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <style>
+      *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: rgb(11, 9, 153);
+}
+.main-container {
+    margin-left: 12rem;
+    margin-right: 12rem;
+}
+.title {
+    font-family: monospace;
+    font-size: 4.5rem;
+}
+.content {
+    font-size: 1.40rem;
+    width: 72%;
+}
+.form{
+    position: relative;
+    width: 400px;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0px;
+    border-radius: 8px;
+    padding: 25px;
+}
+.form-header{
+    border-radius: 8px 8px 0 0;
+    padding: 10px;
+    text-align: center;
+}
+.form-body{
+    padding: 0px 20px;
+}
+.a{
+    text-decoration: none;
+    color: rgb(4, 250, 217);
+    font-size: 18px;
+}
+
+.or-label {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.or-label span:first-child {
+    width: 43%;
+    border-top: 1px solid;
+    display: inline-block;
+}
+.or-label span:last-child {
+    width: 43%;
+    border-top: 1px solid;
+    display: inline-block;
+}
+
+.field{
+    font-size: 16px;
+    font-weight: 400px;
+    width: 100%;
+    padding: 10px 20px;
+    border: 1px solid #c7c1c1;
+    outline: none;
+    border-radius: 30px;
+    margin-top: 30px;
+    background-color: white;
+}
+.action-buttons{
+    padding: 8px 20px;
+    border: none;
+    outline: none;
+    width: 100%;
+    background-color: rgb(7, 40, 131);
+    color: white;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.action-buttons:last-child {
+    background-color: aqua;
+}
+.options{
+    margin: 25px 15px 25px;
+    display: flex;
+    align-items: center;
+    
+}
+.form-footer{
+    text-align: center;
+    margin-top: 20px;
+}
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <nav class="navbar navbar-expand-lg";>
+            <div class="container">
+            <a class="navbar-brand text-white fw-bold" href="#">Startup 3</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav" style="margin-right: 50px;">
+                <ul class="navbar-nav ms-auto" style="color: white;">
+                    <li class="nav-item">
+                        <a class="nav-link disabled text-white" href="#">Overview</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Prices</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Feedback</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary btn-md rounded-pill bg-danger fw-bold ps-4 pe-4" href="#" role="button">Purchase</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </nav>
+        <div class="row m-5">
+            <div class="col-6 mt-2 text-white">
+                <div class="jumbotron">
+                    <h1 class="title fw-bold">Generate Awesome Web Pages</h1>
+                    <p class="content mt-4">The most important part of the Startup is the samples.The samples from a set of 25 usable pages you can use as is or you can add new blocks</p>
+                    <a class="btn btn-primary btn-lg rounded-pill mt-3 bg-danger fw-bold ps-4 pe-4" href="#" role="button">Learn More</a>
+                </div>
+            </div>
+            <div class="col-6 mt-2 d-flex justify-content-end">
+                <div>
+                    <div class="form">
+                        <div class="form-header">
+                            <h2>Sign Up Now</h2>
+                        </div>
+                        <div class="form-body">
+                            <form>
+                                <input type="email" placeholder="Your email" class="field">
+                                <input type="text" placeholder="Your password" class="field"/>
+                                <div class="options">
+                                    <input type="checkbox" class="mt-1 me-2" name="" id=""> I agreed to the Terms of Services
+                                </div>
+                                <button class="rounded-pill action-buttons" style="background-color: blue;">Sign In</button>
+                                <div class="or-label">
+                                    <span></span>
+                                    <span style="padding: 0px 10px;">OR</span>
+                                    <span></span>
+                                </div>
+                                <div class="mt-2">
+                                    <button class="action-buttons">Login via Twitter</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="form-footer">
+                            <span> Do you have an account?</span>
+                            <a href="#" class="a">Sign In</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
